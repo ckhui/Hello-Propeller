@@ -1,0 +1,15 @@
+
+.pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth class=(color == "green" ? 'text-success' : color == "red" ? 'text-danger' : color == "blue" ? 'text-primary' : color == "yellow" ? 'text-warning' : 'text-muted')
+  /! Card media
+  .pmd-card-media
+    /! Card media heading
+    .media-left.media-middle
+      .numberCircle 3
+    .media-body
+      h2.pmd-card-title-text =name
+      p.pmd-card-subtitle-text =subtext
+      p.pmd-card-subtitle-text =subtext2
+    .media-right.media-middle
+      button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect class=(color == "green" ? 'btn-success' : color == "red" ? 'btn-danger' : color == "blue" ? 'btn-primary' : color == "yellow" ? 'btn-warning' : 'btn') type="button" 
+        i.material-icons.pmd-md =icon
+      p.text-center =iconText

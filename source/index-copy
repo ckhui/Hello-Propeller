@@ -1,0 +1,85 @@
+
+.tab-content
+  #tabname1.tab-pane.active role="tabpanel"
+    #content.pmd-content.content-area.dashboard
+      .container-fluid
+        #card-masonry.row
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            h3.text-center.text-muted 17:00
+            /! card 
+            /! = partial 'card'
+            = partial 'card' , :locals => { :color => "green", :name => "Mentor Name", :subtext => "March", :subtext2 => "", :icon => "location_on" , :iconText => "March"}
+
+            = partial 'card' , :locals => { :color => "red", :name => "Loreta Portis", :subtext => "+123-123-123", :subtext2 => "description", :icon => "alarm" , :iconText => "3m"}
+
+            h3.text-center.text-muted 17:15
+            /! card 
+            = partial 'card' , :locals => { :color => "yellow", :name => "Nathanial Peck", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "10m"}
+
+            h3.text-center.text-muted 17:40
+            /! card 
+            /! = partial 'card'
+            = partial 'card' , :locals => { :color => "blue", :name => "Roxy Curtiss", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "4m"}
+            = partial 'card' , :locals => { :color => "red", :name => "Loreta Portis", :subtext => "+123-123-123", :subtext2 => "description", :icon => "alarm" , :iconText => "10m"}
+           
+            h3.text-center.text-muted 17:55
+            /! card 
+            /! = partial 'card'
+            = partial 'card' , :locals => { :color => "green", :name => "Roxy Curtiss", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "4m"}
+            = partial 'card' , :locals => { :color => "red", :name => "Loreta Portis", :subtext => "+123-123-123", :subtext2 => "description", :icon => "alarm" , :iconText => "3m"}
+            = partial 'card' , :locals => { :color => "blue", :name => "Roxy Curtiss", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "4m"}
+            = partial 'card' , :locals => { :color => "red", :name => "Loreta Portis", :subtext => "+123-123-123", :subtext2 => "description", :icon => "alarm" , :iconText => "3m"}
+            = partial 'card' , :locals => { :color => "yellow", :name => "Roxy Curtiss", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "4m"}
+            = partial 'card' , :locals => { :color => "red", :name => "Loreta Portis", :subtext => "+123-123-123", :subtext2 => "description", :icon => "alarm" , :iconText => "3m"}
+
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            h3.text-center.text-muted 18:00
+            /! card 
+            = partial 'card' , :locals => { :color => "blue", :name => "Justin Isaac", :subtext => "+123-123-123", :subtext2 => "description", :icon => "location_on" , :iconText => "4m"}
+
+            = partial 'card' , :locals => { :color => "red", :name => "Lucienne Bowdoin", :subtext => "+123-123-123", :subtext2 => "description", :icon => "check_circle" , :iconText => "3m"}
+
+            = partial 'card' , :locals => { :color => "red", :name => "Kurt Swope", :subtext => "+123-123-123", :subtext2 => "description", :icon => "fingerprint" , :iconText => "6m"}
+
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            h3.text-center.text-muted 19:00
+            /! card 
+            = partial 'card' , :locals => { :color => "green", :name => "Martha Bitterman", :subtext => "+123-123-123", :subtext2 => "description", :icon => "print" , :iconText => "8m"}
+
+            = partial 'card' , :locals => { :color => "blue", :name => "German Mina", :subtext => "+123-123-123", :subtext2 => "description", :icon => "stars" , :iconText => "20m"}
+
+            = partial 'card' , :locals => { :color => "green", :name => "Janita Salls", :subtext => "+123-123-123", :subtext2 => "description", :icon => "call" , :iconText => "46m"}
+
+  #about.tab-pane role="tabpanel"
+      #content.pmd-content.content-area.dashboard
+        .container-fluid
+          .col-lg-3.col-md-3.col-sm-12.col-xs-12
+            .col-lg-11.col-md-11.col-sm-11.col-xs-11
+             .red
+            .col-lg-1.col-md-1.col-sm-1.col-xs-1
+              .blue
+          .col-lg-6.col-md-6.col-sm-12.col-xs-12
+            h1 124124
+          .col-lg-3.col-md-3.col-sm-12.col-xs-12
+            h1 asfjajk
+
+
+
+footer.admin-footer
+  .container-fluid
+    ul.list-unstyled.list-inline
+      li
+        span.pmd-card-subtitle-text Propeller © 2016. All Rights Reserved.
+        h3.pmd-card-subtitle-text
+          | Licensed under 
+          a href="https://opensource.org/licenses/MIT" target="_blank"  MIT license.
+      li.pull-right.download-now
+        a href="archive/pmd-admin-template-1.0.0.zip" onclick="downloadPMDadmintemplate()" 
+          div
+            span.pmd-card-subtitle-text Version- 1.0.0
+            h3.pmd-card-title-text Download Now
+      li.pull-right.for-support
+        a href="mailto:support@propeller.in" 
+          div
+            span.pmd-card-subtitle-text For Support
+            h3.pmd-card-title-text support@propeller.in

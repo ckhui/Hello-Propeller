@@ -1,0 +1,75 @@
+- if color == "green" 
+  .pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth.text-success
+    /! Card media
+    .pmd-card-media
+      /! Card media heading
+      .media-left.media-middle
+        .numberCircle 3
+      .media-body
+        h2.pmd-card-title-text =name
+        p.pmd-card-subtitle-text =subtext
+        p.pmd-card-subtitle-text =subtext2
+      .media-right.media-middle
+        button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect.btn-success type="button" 
+          i.material-icons.pmd-md =icon
+        p.text-center =iconText
+- elsif color == "red"
+  .pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth.text-danger
+    /! Card media
+    .pmd-card-media
+      /! Card media heading
+      .media-left.media-middle
+        .numberCircle 3
+      .media-body
+        h2.pmd-card-title-text Name
+        p.pmd-card-subtitle-text +123.123.123
+        p.pmd-card-subtitle-text text1 text2
+      .media-right.media-middle
+        button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect.btn-danger type="button" 
+          i.material-icons.pmd-md location_on
+        p.text-center 3m
+- elsif color == "blue"
+  .pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth.text-primary
+    /! Card media
+    .pmd-card-media
+      /! Card media heading
+      .media-left.media-middle
+        .numberCircle 3
+      .media-body
+        h2.pmd-card-title-text Name
+        p.pmd-card-subtitle-text +123.123.123
+        p.pmd-card-subtitle-text text1 text2
+      .media-right.media-middle
+        button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect.btn-primary type="button" 
+          i.material-icons.pmd-md location_on
+        p.text-center 3m
+- elsif color == "orange"
+  .pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth.text-warning
+    /! Card media
+    .pmd-card-media
+      /! Card media heading
+      .media-left.media-middle
+        .numberCircle 3
+      .media-body
+        h2.pmd-card-title-text Name
+        p.pmd-card-subtitle-text +123.123.123
+        p.pmd-card-subtitle-text text1 text2
+      .media-right.media-middle
+        button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect.btn-warning type="button" 
+          i.material-icons.pmd-md location_on
+        p.text-center 3m
+-else
+  .pmd-card.pmd-card-media-inline.pmd-card-default.pmd-z-depth.text-muted
+    /! Card media
+    .pmd-card-media
+      /! Card media heading
+      .media-left.media-middle
+        .numberCircle 3
+      .media-body
+        h2.pmd-card-title-text Name
+        p.pmd-card-subtitle-text +123.123.123
+        p.pmd-card-subtitle-text text1 text2
+      .media-right.media-middle
+        button.btn.btn-sm.pmd-btn-fab.pmd-btn-flat.pmd-ripple-effect.btn type="button" 
+          i.material-icons.pmd-md location_on
+        p.text-center 3m

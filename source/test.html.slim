@@ -1,0 +1,60 @@
+#content.pmd-content.content-area.dashboard
+  .container-fluid
+    .col-lg-4.col-md-4.col-sm-12.col-xs-12
+      .row
+        .col-lg-10.col-md-10.col-sm-10.col-xs-10 style="padding-right: 0px;"
+          input.form-control.rounded-side type="text" class="" placeholder="Search"
+          ul.list-group.pmd-list.pmd-card-list
+            - 26.times do |i|
+              ls.list-group-item class=(i == 5 ? 'active' : '')
+                i.material-icons.md-dark.pmd-sm.media-middle.media-left star
+                p.media-body.media-middle
+                  |Name
+                  span.pull-right pho-ne-num-ber
+        .col-lg-2.col-md-2.col-sm-2.col-xs-2 style="padding-left: 0px;"
+          ul.list-group
+            - ("A".."Z").each do |char|
+              ls.list-group-item class=(char == "F" ? "active" : "") #{char} 
+        
+    .col-lg-5.col-md-5.col-sm-12.col-xs-12
+      .row
+        h2.text-primary 
+          |Felisa Oshiro  
+          span.small 
+            .pmd-chip.pmd-chip-contact
+              |★ Investment
+              a.pmd-chip-action href="javascript:void(0);"
+                i.material-icons keyboard_arrow_down
+      .row
+        h3 felisa.oshiro@gmail.com     +1 777 439 3293
+      .row
+          
+        button.btn.btn-success type="button"  style="margin-right: 15px;"
+          |Send SMS 
+          i.material-icons.pmd-sm chat_bubble_outline
+        button.btn.btn-success type="button"  style="margin-right: 15px;"
+          |Call
+          i.material-icons.pmd-sm phone_android 
+
+        span 
+          |Left 
+          u 3 reviews
+          | ★★★★★
+
+
+
+    .col-lg-3.col-md-3.col-sm-12.col-xs-12
+      h1 asfjajk
+
+
+
+ul.list-group.pmd-z-depth.pmd-list.pmd-card-list
+  li.list-group-item
+    .media-left
+      a.avatar-list-img href="javascript:void(0);" 
+        img.img-responsive alt="40x40" data-holder-rendered="true" data-src="holder.js/40x40" src="http://propeller.in/components/list/img/40x40.png" /
+    .media-body
+      h3.list-group-item-heading Two-line item
+      span.list-group-item-text Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    i.material-icons.media-right check_box
+  
